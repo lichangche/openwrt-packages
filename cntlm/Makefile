@@ -8,18 +8,26 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=cntlm
-PKG_VERSION:=0.92.3
-PKG_RELEASE:=11
 
-PKG_MAINTAINER:=Jakub Skopal <j@kubs.cz>
+#PKG_VERSION:=0.92.3
+PKG_VERSION:=0.92.4
+
+#PKG_RELEASE:=11
+PKG_RELEASE:=12
+
+#PKG_MAINTAINER:=Jakub Skopal <j@kubs.cz>
+PKG_MAINTAINER:=Lichang Che <lichang.che@gmail.com>
 
 PKG_LICENSE:=GPLv2
 PKG_LICENSE_FILES:=LICENSE
 
 PKG_SOURCE_PROTO:=git
-PKG_SOURCE_URL:=https://github.com/jakubskopal/cntlm.git
+#PKG_SOURCE_URL:=https://github.com/jakubskopal/cntlm.git
+PKG_SOURCE_URL:=https://github.com/lichangche/cntlm-gss.git
 PKG_SOURCE_SUBDIR:=$(PKG_NAME)-$(PKG_VERSION)
-PKG_SOURCE_VERSION:=93e41aa1efb35d39c643240ba5b111818ad9b30c
+#PKG_SOURCE_VERSION:=93e41aa1efb35d39c643240ba5b111818ad9b30c
+PKG_SOURCE_VERSION:=5aec58efe1dcf387875614a4d24e9c27d2432a1f
+
 PKG_SOURCE:=$(PKG_NAME)-$(PKG_VERSION)-$(PKG_SOURCE_VERSION).tar.gz
 
 PKG_FIXUP:=autoreconf
