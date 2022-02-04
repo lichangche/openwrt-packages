@@ -39,7 +39,8 @@ define Package/cntlm
   TITLE:=cntlm
   SECTION:=net
   CATEGORY:=Network
-  URL:=http://cntlm.sourceforge.net/
+  #URL:=http://cntlm.sourceforge.net/
+  URL:=https://github.com/lichangche/cntlm-gss.git
   DEPENDS+= +libpthread
 endef
 
