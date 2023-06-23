@@ -10,7 +10,7 @@ include $(TOPDIR)/rules.mk
 PKG_NAME:=cntlm
 
 #PKG_VERSION:=0.92.3
-PKG_VERSION:=0.92.4
+PKG_VERSION:=0.94.0
 
 #PKG_RELEASE:=11
 PKG_RELEASE:=12
@@ -22,11 +22,9 @@ PKG_LICENSE:=GPLv2
 PKG_LICENSE_FILES:=LICENSE
 
 PKG_SOURCE_PROTO:=git
-#PKG_SOURCE_URL:=https://github.com/jakubskopal/cntlm.git
-PKG_SOURCE_URL:=https://github.com/lichangche/cntlm-gss.git
+PKG_SOURCE_URL:=https://github.com/lichangche/cntlm.git
 PKG_SOURCE_SUBDIR:=$(PKG_NAME)-$(PKG_VERSION)
-#PKG_SOURCE_VERSION:=93e41aa1efb35d39c643240ba5b111818ad9b30c
-PKG_SOURCE_VERSION:=5aec58efe1dcf387875614a4d24e9c27d2432a1f
+PKG_SOURCE_VERSION:=149d916b84ab1d6cbc3c1b003da33e485edaccad
 
 PKG_SOURCE:=$(PKG_NAME)-$(PKG_VERSION)-$(PKG_SOURCE_VERSION).tar.gz
 
@@ -40,7 +38,7 @@ define Package/cntlm
   SECTION:=net
   CATEGORY:=Network
   #URL:=http://cntlm.sourceforge.net/
-  URL:=https://github.com/lichangche/cntlm-gss.git
+  URL:=https://github.com/lichangche/cntlm.git
   DEPENDS+= +libpthread
 endef
 
